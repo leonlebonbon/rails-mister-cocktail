@@ -1,9 +1,19 @@
 
+<div class="my-banner text-center">
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "home.jpeg" %>');">
+    <div class="banner-content">
+      <h1>Cocktail Time</h1>
+      <%= link_to "Add a new cocktail",  new_cocktail_path, class: "btn btn-banner" %>
+    </div>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="card" style="background-image: url('<%= image_path "cocktail_martini.jpeg" %>');">
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "cocktail_martini.jpeg" %>');">
         <div class="card-description">
           <h2><%= cocktail.name %></h2>
           <p>A great cocktail</p>
@@ -14,11 +24,6 @@
   <% end %>
   </div>
 </div>
-
-<div class="container text-center bouton">
-    <%= link_to "Add a new cocktail",  new_cocktail_path, class: "btn btn-medium" %>
-</div>
-
 
 
 

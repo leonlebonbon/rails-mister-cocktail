@@ -5,14 +5,9 @@
   background-position: center;
   color: white;
   position: relative;
+  border-radius: 4px;
 }
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
+
 .card-category {
   position: absolute;
   top: 10px;
@@ -51,6 +46,7 @@
     justify-content: center;
     display: flex;
     padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .container.text-center.bouton {
