@@ -1,0 +1,30 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <div class="navbar-wagon-brand">
+    <%= image_tag 'logo.jpeg' %>
+  </div>
+
+  <div class="container text-center">
+    <h1>Mister Cocktail</h1>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <%= link_to "Menu", cocktails_path, class: "btn btn-medium" %>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
