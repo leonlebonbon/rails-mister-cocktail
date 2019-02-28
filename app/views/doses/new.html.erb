@@ -1,0 +1,7 @@
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit "Add a dose to a cocktail", class: "btn btn-primary" %>
+<% end %>
+
+<!-- new_cocktail_dose GET    /cocktails/:cocktail_id/doses/new(.:format)     -->
